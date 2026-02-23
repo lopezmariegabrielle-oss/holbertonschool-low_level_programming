@@ -24,4 +24,4 @@ n = rand() - RAND_MAX / 2;
 		printf("%d is negative\n", n);
 	}
 	return (0);
-} 
+}
