@@ -4,9 +4,8 @@
 /**
  * main - prints the last digit of a random number
  * @n: the random number generated
- * @last_digit: the variable to store the last digit of n
  *
- * Return: 0 
+ * Return: 0;
  */
 int main(void)
 {
@@ -23,6 +22,6 @@ int main(void)
         printf("and is 0\n");
     else
         printf("and is less than 6 and not 0\n");
-    
-    return (0);
-    }
+
+return (0);
+}
