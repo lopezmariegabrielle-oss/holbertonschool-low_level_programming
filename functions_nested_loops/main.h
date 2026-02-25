@@ -8,5 +8,6 @@
  * Return: Toujours 0 (Succès)
  */
 int _putchar(char c);
+void print_alphabet(void);
 
 #endif
