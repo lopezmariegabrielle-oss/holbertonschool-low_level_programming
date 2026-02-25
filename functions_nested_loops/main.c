@@ -12,14 +12,22 @@ print_alphabet();
 /*exercice 2*/
 print_alphabet_x10();
 /*exercice 3*/
-    r = _islower('a'); /* Devrait renvoyer 1 */
+    r = _islower('a');
     _putchar(r + '0');
-    r = _islower('A'); /* Devrait renvoyer 0 */
+    r = _islower('A');
     _putchar(r + '0');
-    r = _islower('z'); /* Devrait renvoyer 1 */
+    r = _islower('z');
     _putchar(r + '0');
     _putchar('\n');
-    return (0);
+  
+/*exercice 4*/
+r = _isalpha('H'); 
+    _putchar(r + '0');
+    r = _isalpha('o'); 
+    _putchar(r + '0');
+    r = _isalpha(';'); 
+    _putchar(r + '0');
+    _putchar('\n');
 
 return (0);
 }
