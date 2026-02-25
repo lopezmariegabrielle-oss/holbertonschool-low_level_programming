@@ -46,5 +46,17 @@ r = _isalpha('H');
     _putchar(' ');
     _putchar('\n');
     
+/* exercice 6 */
+    r = _abs(-1);
+    _putchar(r + '0'); 
+    _putchar('\n');
+
+    r = _abs(0);
+    _putchar(r + '0');
+    _putchar('\n');
+
+    r = _abs(98);
+    _putchar('\n');
+    
 return (0);
 }
