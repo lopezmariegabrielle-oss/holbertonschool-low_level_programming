@@ -1,14 +1,11 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - Point d'entrée du programme
- *
- * Description: Ce programme affiche le mot _putchar
- * suivi d'une nouvelle ligne.
- *
- * Return: Renvoie toujours 0 (Succès)
- */
-int _putchar(char c);
+* _putchar - writes the character c to stdout
+* @c: The character to print
+*
+* Return: On success 1.
+*/
 int main(void)
 {
 _putchar('_');
