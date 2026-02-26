@@ -69,5 +69,8 @@ print_last_digit(98);
 _putchar('\n');
 jack_bauer();
 
+/*exercice 9*/
+times_table();
+
 return (0);
 }
