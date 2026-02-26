@@ -11,7 +11,7 @@ for (i = 0; i <= 9; i++)
 for (j = 0; j <= 9; j++)
 {
 res = i * j;
-if (j == 0)
+if (j == 0)gi
 {
 _putchar('0');
 }
@@ -19,7 +19,7 @@ else
 {
 _putchar(',');
 _putchar(' ');
-if (res >= 10)
+if (res < 10)
 {
 _putchar(' ');
 _putchar(res + '0');
