@@ -64,6 +64,10 @@ print_last_digit(98);
     r = print_last_digit(-1024);
     _putchar('0' + r);
     _putchar('\n');
-    
+
+/*exercice 8*/
+_putchar('\n');
+jack_bauer();
+
 return (0);
 }
