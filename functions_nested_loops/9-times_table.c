@@ -11,7 +11,7 @@ for (i = 0; i <= 9; i++)
 for (j = 0; j <= 9; j++)
 {
 res = i * j;
-if (j == 0)gi
+if (j == 0)
 {
 _putchar('0');
 }
