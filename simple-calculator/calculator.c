@@ -52,6 +52,11 @@ division();
 return (0);
 
 }
+/**
+ * addition - Adds two integers and prints the result
+ *
+ * Return: void
+ */
 void addition(void)
 {
 int a, b;
@@ -62,6 +67,12 @@ printf("B: ");
 scanf("%d", &b);
 printf("Result: %d\n", a + b);
 }
+
+/**
+ * subtraction - Subtracts two integers and prints the result
+ *
+ * Return: void
+ */
 void subtraction(void)
 {
 int a, b;
@@ -72,6 +83,12 @@ printf("B: ");
 scanf("%d", &b);
 printf("Result: %d\n", a - b);
 }
+
+/**
+ * multiplication - Multiplies two integers and prints the result
+ *
+ * Return: void
+ */
 void multiplication(void)
 {
 int a, b;
@@ -82,7 +99,27 @@ printf("B: ");
 scanf("%d", &b);
 printf("Result: %d\n", a * b);
 }
+
+/**
+ * division - Divides two numbers with zero-check
+ *
+ * Return: void
+ */
 void division(void)
 {
+float a, b;
 
+printf("A: ");
+scanf("%f", &a);
+printf("B: ");
+scanf("%f", &b);
+
+if (b == 0)
+{
+printf("Error: division by zero\n");
+}
+else
+{
+printf("Result: %.1f\n", a / b);
+}
 }
