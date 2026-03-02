@@ -27,6 +27,11 @@ void effectuer_calcul(int choix, int a, int b)
 		break;
 	}
 }
+/**
+ * main - Point d'entrée du programme de calculatrice
+ *
+ * Return: Toujours 0 (Succès)
+ */
 int main(void)
 {
 	int choix, a, b;
