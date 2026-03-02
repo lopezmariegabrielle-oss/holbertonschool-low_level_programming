@@ -1,43 +1,29 @@
 #include <stdio.h>
 
 /**
- * main - Point d'entrée pour la calculatrice
+ * main - Affiche un menu de calculatrice et gère la sortie
  *
- * Return: Toujours 0
+ * Return: Toujours 0 (Succès)
  */
 int main(void)
 {
-int choice;
-printf("Simple Calculator\n");
-while (choice != 0 || choice != 1 || choice != 2 || choice != 3 || choice != 4)
-{
-printf("1) Add\n2) Subtract\n3) Multiply\n4) Divide\n0) Quit\nChoice: ");
-scanf("%d", &choix);
-if (choice > 4)
-{
-prinf("Invalid choice\n");
-}
-if (choice == 0)
-{
-printf ("Bye!\n");
-return (0);
-}
-if (choice == 1)
-{
-addition();
-}
-if (choice == 2)
-{
-subtraction();
-}
-if (choice == 3)
-{
-multiplication();
-}
-if (choice == 4)
-{
-division();
-}
-}
-return(0);
+	int choice;
+
+	printf("Simple Calculator\n");
+	do {
+		printf("1) Add\n2) Subtract\n3) Multiply\n4) Divide\n0) Quit\n");
+		printf("Choice: ");
+		scanf("%d", &choice);
+		if (choice == 0)
+		{
+			printf("Bye!\n");
+		}
+		else if (choice < 0 || choice > 4)
+		{
+			printf("Invalid choice\n");
+		}
+
+	} while (choice != 0);
+
+	return (0);
 }
