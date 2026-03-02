@@ -74,7 +74,13 @@ printf("Result: %d\n", a - b);
 }
 void multiplication(void)
 {
+int a, b;
 
+printf("A: ");
+scanf("%d", &a);
+printf("B: ");
+scanf("%d", &b);
+printf("Result: %d\n", a * b);
 }
 void division(void)
 {
