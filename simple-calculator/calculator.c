@@ -1,60 +1,42 @@
 #include <stdio.h>
 
 /**
- * effectuer_calcul - Gère les opérations de calcul
- * @choix: L'opération choisie
- * @a: Premier nombre
- * @b: Deuxième nombre
- */
-void effectuer_calcul(int choix, int a, int b)
-{
-	switch (choix)
-	{
-	case 1:
-		printf("Result: %d\n", a + b);
-		break;
-	case 2:
-		printf("Result: %d\n", a - b);
-		break;
-	case 3:
-		printf("Result: %d\n", a * b);
-		break;
-	case 4:
-		if (b == 0)
-			printf("Error: Division by zero\n");
-		else
-			printf("Result: %d\n", a / b);
-		break;
-	}
-}
-/**
- * main - Point d'entrée du programme de calculatrice
+ * main - Point d'entrée pour la calculatrice
  *
- * Return: Toujours 0 (Succès)
+ * Return: Toujours 0
  */
 int main(void)
 {
-	int choix, a, b;
-
-	printf("Simple Calculator\n");
-	do {
-		printf("1) Add\n2) Subtract\n3) Multiply\n4) Divide\n0) Quit\nChoice: ");
-		scanf("%d", &choix);
-
-		if (choix >= 1 && choix <= 4)
-		{
-			printf("Enter first number: ");
-			scanf("%d", &a);
-			printf("Enter second number: ");
-			scanf("%d", &b);
-			effectuer_calcul(choix, a, b);
-		}
-		else if (choix == 0)
-			printf("Bye!\n");
-		else
-			printf("Invalid choice, please try again.\n");
-
-	} while (choix != 0);
-
-	return (0);
+int choix;
+while (choice != 0 || choice != 1 || choice != 2 || choice != 3 || choice != 4)
+{
+printf("1) Add\n2) Subtract\n3) Multiply\n4) Divide\n0) Quit\nChoice: ");
+scanf("%d", &choix);
+if (choice > 4)
+{
+prinf("Invalid choice\n");
+}
+if (choice == 0)
+{
+printf ("Bye!\n");
+return (0);
+}
+if (choice == 1)
+{
+addition();
+}
+if (choice == 2)
+{
+subtraction();
+}
+if (choice == 3)
+{
+multiplication();
+}
+if (choice == 4)
+{
+division();
+}
+}
+return(0);
 }
