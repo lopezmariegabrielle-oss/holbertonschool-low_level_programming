@@ -1,0 +1,14 @@
+#ifndef MAIN_H
+#define MAIN_H
+#include <stdio.h>
+/**
+ * file: main.h
+ * description: Header file containing prototypes for all functions
+ * used in the pointers and arrays project.
+ */
+
+int _putchar(char c);
+void reset_to_98(int *n);
+void swap_int(int *a, int *b);
+
+#endif
