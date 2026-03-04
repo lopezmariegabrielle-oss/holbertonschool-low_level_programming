@@ -14,17 +14,10 @@ if (str == NULL)
 return;
 }
 while (str[len] != '\0')
-{
 len++;
-}
-if (len % 2 == 0)
-{
+
 start = (len + 1) / 2;
-}
-else
-{
-start = len / 2;
-}
+
 i = start;
 while (i < len)
 {
