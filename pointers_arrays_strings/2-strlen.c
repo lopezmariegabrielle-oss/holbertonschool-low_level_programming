@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _strlen - returns the length of a string
  * @s: string to evaluate
@@ -7,16 +8,17 @@
  */
 int _strlen(char *s)
 {
-    int longueur = 0;
+	int longueur = 0;
 
-    if (s == NULL)
+	if (s == NULL)
 	{
 		return (0);
 	}
-while (s[longueur] != '\0')
-{
-    longueur++;
-}
 
-return (longueur);
+	while (s[longueur] != '\0')
+	{
+		longueur++;
+	}
+
+	return (longueur);
 }
