@@ -87,9 +87,9 @@ total_t = (double)(end_total - start_total) / CLOCKS_PER_SEC;
 
 /*Resultat*/
 printf("TOTAL seconds: %.6f\n", total_t);
-printf("BUILD_DATA seconds: %.6f\n" , build_t);
-printf("PROCESS seconds: %.6f\n" , process_t);
-printf("REDUCE seconds: %.6f\n" , reduce_t);
+printf("BUILD_DATA seconds: %.6f\n", build_t);
+printf("PROCESS seconds: %.6f\n", process_t);
+printf("REDUCE seconds: %.6f\n", reduce_t);
 
     /* Required output (exact format, no extra lines):
      * TOTAL seconds: <float>
