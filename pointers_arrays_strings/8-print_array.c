@@ -8,17 +8,22 @@
  */
 void print_array(int *a, int n)
 {
-	int i;
+int i;
 
-	for (i = 0; i < n; i++)
-	{
-		printf("%d", a[i]);
+if (a == NULL)
+{
+return;
+}
 
-		/* Si ce n'est pas le dernier élément, on ajoute la virgule */
-		if (i < n - 1)
-		{
-			printf(", ");
-		}
-	}
-	printf("\n");
+for (i = 0; i < n; i++)
+{
+printf("%d", a[i]);
+
+
+if (i < n - 1)
+{
+printf(", ");
+}
+}
+printf("\n");
 }
