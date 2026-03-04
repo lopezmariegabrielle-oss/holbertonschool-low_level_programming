@@ -82,8 +82,7 @@ reduce_t = (double)(end_step - start_step) / CLOCKS_PER_SEC;
 end_total = clock();
 total_t = (double)(end_total - start_total) / CLOCKS_PER_SEC;
 
-    if (checksum == 0ul)
-        /*printf("impossible\n");*/
+(void)checksum;
 
 /*Resultat*/
 printf("TOTAL seconds: %.6f\n", total_t);
