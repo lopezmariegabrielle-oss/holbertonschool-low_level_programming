@@ -12,9 +12,6 @@ int i, j;
 char s1[] = "aeotlAEOTL";
 char s2[] = "4307143071";
 
-if (s == NULL)
-return (NULL);
-
 i = 0;
 while (s[i] != '\0')
 {
