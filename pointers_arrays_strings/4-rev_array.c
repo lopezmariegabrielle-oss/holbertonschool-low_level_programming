@@ -13,7 +13,7 @@ int temp;
 
 if (a == NULL || n <= 0)
 return;
-
+i=0;
 j= n -1;
 
 while (i < j)
