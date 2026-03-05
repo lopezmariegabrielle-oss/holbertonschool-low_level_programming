@@ -24,6 +24,7 @@ while (s1[j] != '\0')
 if (s[i] == s1[j])
 {
 s[i] = s2[j];
+break;
 }
 j++;
 }
