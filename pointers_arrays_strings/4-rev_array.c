@@ -11,7 +11,7 @@ int i = 0;
 int j;
 int temp;
 
-if (a == NULL)
+if (a == NULL || n <= 0)
 return;
 
 j= n -1;
