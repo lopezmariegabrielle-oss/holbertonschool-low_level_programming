@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 /**
+<<<<<<< HEAD
  * simple_print_buffer - prints buffer in hexa
  * @buffer: the address of memory to print
  * @size: the size of the memory to print
@@ -30,6 +31,8 @@ void simple_print_buffer(char *buffer, unsigned int size)
 }
 
 /**
+=======
+>>>>>>> 69392b8cdf787672925e8bd2a8d277a0a35f1ff0
  * main - check the code
  *
  * Return: Always 0.
