@@ -36,7 +36,6 @@ void simple_print_buffer(char *buffer, unsigned int size)
  */
 int main(void)
 {
-<<<<<<< HEAD
     char buffer[98] = {0};
     char buffer2[98] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
 
@@ -44,21 +43,5 @@ int main(void)
     _memcpy(buffer + 50, buffer2, 10);
     printf("-------------------------------------------------\n");
     simple_print_buffer(buffer, 98);    
-=======
-    char s1[98] = "Hello ";
-    char s2[] = "World!\n";
-    char *ptr;
-
-    printf("%s\n", s1);
-    printf("%s", s2);
-    ptr = _strncat(s1, s2, 1);
-    printf("%s\n", s1);
-    printf("%s", s2);
-    printf("%s\n", ptr);
-    ptr = _strncat(s1, s2, 1024);
-    printf("%s", s1);
-    printf("%s", s2);
-    printf("%s", ptr);
->>>>>>> 69392b8cdf787672925e8bd2a8d277a0a35f1ff0
     return (0);
 }
