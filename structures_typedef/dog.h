@@ -7,12 +7,12 @@
  * @age: Deuxième membre (âge du chien)
  * @owner: Troisième membre (nom du propriétaire)
  */
-struct dog
+typedef struct dog
 {
 char *name;
 float age;
 char *owner;
-};
+} dog_t;
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 
