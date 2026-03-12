@@ -11,8 +11,7 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *d;
-int len_name = 0, len_owner = 0;
-int i;
+int len_name = 0, len_owner = 0, i;
 
 /*Mesure des longeures*/
 while (name[len_name])
