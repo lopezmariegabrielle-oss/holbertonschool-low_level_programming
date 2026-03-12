@@ -1,8 +1,38 @@
 #include "dog.h"
 #include <stdlib.h>
-
 /**
- * new_dog - crée un nouveau chien (avec copie des données)
+ * _strlen - calcule la longueur d'une chaîne
+ * @s: la chaîne à mesurer
+ * Return: la longueur
+ */
+int _strlen(char *s)
+{
+int len = 0;
+
+while (s[len])
+len++;
+return (len);
+}
+/**
+ * _strcpy - copie une chaîne vers une autre
+ * @dest: destination
+ * @src: source
+ * Return: le pointeur vers dest
+ */
+char *_strcpy(char *dest, char *src)
+{
+int i = 0;
+
+while (src[i])
+{
+dest[i] = src[i];
+i++;
+}
+dest[i] = '\0';
+return (dest);
+}
+/**
+ * new_dog - crée un nouveau chien
  * @name: nom du chien
  * @age: âge du chien
  * @owner: propriétaire du chien
@@ -11,36 +41,27 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *d;
-int len_name = 0, len_owner = 0, i;
-
+int len_n, len_o;
 if (name == NULL || owner == NULL)
 return (NULL);
-
 /*Mesure des longeures*/
-while (name[len_name])
-len_name++;
-while (owner[len_owner])
-len_owner++;
+len_n = _strlen(name);
+len_o = _strlen(owner);
 /*Allocation structure procipal*/
 d = malloc(sizeof(dog_t));
 if (d == NULL)
 return (NULL);
 /*Allocation et copie du Nom*/
-d->name = malloc(sizeof(char) * (len_name + 1));
+d->name = malloc(sizeof(char) * (len_n + 1));
 if (d->name == NULL)
 {
 free(d); /* Si le nom rate, on libère d */
 return (NULL);
 }
-i = 0;
-while (name[i] != '\0')
-{
-d->name[i] = name[i];
-i++;
-}
-d->name[i] = '\0';
+_strcpy(d->name, name);
+
 /*Allocation et copie du Proprietaire*/
-d->owner = malloc(sizeof(char) * (len_owner + 1));
+d->owner = malloc(sizeof(char) * (len_o + 1));
 if (d->owner == NULL)
 {
 /*Libère tout ce qui a été fait avant !*/
@@ -48,16 +69,8 @@ free(d->name);
 free(d);
 return (NULL);
 }
-i = 0;
-while (owner[i])
-{
-d->owner[i] = owner[i];
-i++;
-}
-d->owner[i] = '\0';
-
-/*Donne l'âge et renvoie le pointeur */
+_strcpy(d->owner, owner);
+/*Donne l'âge et renvoie le pointeur*/
 d->age = age;
-
 return (d);
 }
