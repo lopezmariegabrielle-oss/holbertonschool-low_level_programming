@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
     num2 = atoi(argv[3]);
 
     /* je verifie la division par zéro */
-    if ((argv[2][0] == '/' || argv[2][0] == '%') && num2 == 0)
+    if ((strcmp(argv[2], "/") == 0 || strcmp(argv[2], "%") == 0) && num2 == 0)
     {
         printf("Error\n");
         exit(100);
