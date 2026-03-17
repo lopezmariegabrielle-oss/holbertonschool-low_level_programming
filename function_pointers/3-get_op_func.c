@@ -16,8 +16,8 @@ int (*get_op_func(char *s))(int, int)
     while (ops[i].op != NULL)
     {
         /* Si l'opérateur s correspond à celui du tableau */
-        /* j'utilise s[1] == '\0' pour m'assurer que l'opérateur fait 1 seul caractère */
-        if (strcmp(ops[i].op, s) == 0 && s[1] == '\0')
+        /* je vérifie si l'opérateur correspond et s'il ne fait qu'un seul caractère */
+        if (*(ops[i].op) == *s && s[1] == '\0')
             return (ops[i].f);
         i++;
     }
