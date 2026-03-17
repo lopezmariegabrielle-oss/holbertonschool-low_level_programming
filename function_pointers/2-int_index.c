@@ -1,6 +1,5 @@
 #include "function_pointers.h"
 #include <stddef.h>
-
 /**
  * int_index - searches for an integer
  * @array: the array to search in
@@ -17,7 +16,7 @@ if (array == NULL || cmp == NULL || size <= 0)
 {
 return (-1);
 }
-while (1 < size)
+while (i < size)
 {
 if (cmp(array[i]) != 0)
 {
