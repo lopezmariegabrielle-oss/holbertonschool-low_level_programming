@@ -13,11 +13,11 @@ va_list ap;
 unsigned int i;
 int sum = 0;
 
-/*Vérifier si n est égal à 0 */
+/* Vérifier si n est égal à 0 */
 if (n == 0)
 return (0);
 
-/*la liste variadique*/
+/* la liste variadique */
 va_start(ap, n);
 i = 0;
 while (i < n)
