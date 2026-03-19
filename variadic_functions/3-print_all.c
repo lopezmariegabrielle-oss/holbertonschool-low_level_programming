@@ -37,11 +37,8 @@ str = "(nil)";
 }
 printf("%s%s", sep, str);
 break;
-default:
-i++;
-continue; /* saute le changement de  'sep si c'est pas un bon type */
 }
-sep = ","; /* apres le 1er passage sep devient "," */
+sep = ", "; /* apres le 1er passage sep devient "," */
 }
 i++;
 }
