@@ -19,6 +19,12 @@ return (0);
 }
 return (check_prime(n, i + 1));
 }
+/**
+ * is_prime_number - says if an integer is a prime number or not
+ * @n: number to evaluate
+ *
+ * Return: 1 if n is a prime number, 0 if not
+ */
 /* fonction d'entréé */
 int is_prime_number(int n)
 {
