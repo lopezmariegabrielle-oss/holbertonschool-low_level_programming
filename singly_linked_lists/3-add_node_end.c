@@ -15,6 +15,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *new;
 	list_t *last;
 	unsigned int i = 0;
+
 	if (str == NULL)
 		return (NULL);
 
@@ -26,7 +27,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (new->str == NULL)
 	{
 		free(new);
-		return(NULL);
+		return (NULL);
 	}
 	while (str[i])
 		i++;
@@ -35,15 +36,15 @@ list_t *add_node_end(list_t **head, const char *str)
 /*Si la liste et vide le nouveau devien premier */
 	if (*head == NULL)
 {
-    *head = new;
-    return (new);
+	*head = new;
+	return (new);
 }
 /*Sinon on cherche le dernier wagon actuel */
 last = *head;
-    while (last->next != NULL)
-    {
-        last = last->next;
-    }
+	while (last->next != NULL)
+	{
+		last = last->next;
+	}
 	/*Accroche le nouveau wagon a la fin */
 	last->next = new;
 	return (new);
