@@ -19,7 +19,7 @@ void free_list(list_t *head)
 
 		/*je libere le wagon lui-meme */
 		free(head);
-		
+
 		/*J'avence le wagon suivant que j'ai mis de côté */
 		head = temp;
 	}
