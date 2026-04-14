@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * create_file - Créer un fichier.
+ * @filename: Le nom du fichier à créer.
+ * @text_content: Une chaîne de caractères terminée par NULL à écrire.
+ *
+ * Return: 1 en cas de succès, -1 en cas d'échec.
+ */
+
 int create_file(const char *filename, char *text_content)
 {
 	int fd;
